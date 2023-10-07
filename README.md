@@ -7,76 +7,70 @@
 <body>
 <h2>Introduction</h2>
 GitHub is a freely accessible open-source version control system, employed for tracking alterations in source code and other documents. It enables multiple individuals to collaborate concurrently on a single document, with the added benefit of being able to revert to prior versions in the event of significant bugs. Linus Torvalds, the originator of Linux, is the mind behind its creation. - Intro To GitHub-2019
-    
+
 <h3>Table of Contents</h3>
+<o1>
+<li>Installing Git</li>
+<li>Setting up Git</li>
+<li>Creating a Local Repository</li>
+<li>Making Changes</li>
+<li>Committing Changes</li>
+<li>Creating a GitHub Repository</li>
+<li>Pushing to GitHub</li>
+<li>Pulling Changes</li>
+<li>Branching and Merging</li>
+<li>Collaborating with Others</li>
+</o1>
+<dl>    
+<dt><b>1. Installing Git</b></dt>
+<dd>Download and install Git from the official website: <a href="https://git-scm.com">Git Downloads</a></dd>
 
-    Installing Git
-    Setting up Git
-    Creating a Local Repository
-    Making Changes
-    Committing Changes
-    Creating a GitHub Repository
-    Pushing to GitHub
-    Pulling Changes
-    Branching and Merging
-    Collaborating with Others
+<dt><b>2. Setting up Git</b></dt>
+<dd>Open a terminal or command prompt and set your username and email:</dd>
+<p><dd>"Your Name"</dd></p>
+<p><dd>"youremail@example.com"</dd></p>
 
-1. Installing Git <a name="installing-git"></a>
-Download and install Git from the official website: Git Downloads
+<dt><b>3. Creating a Local Repository</b></dt>
+<dd>Create a new directory for your project, and then navigate into the directory. Initialize a Git repository.</dd>
 
-3. Setting up Git <a name="setting-up-git"></a>
-Open a terminal or command prompt and set your username and email:
-bash
-git config --global user.name "Your Name"
-git config --global user.email "youremail@example.com"
+<dt><b>4. Making Changes</b></dt>
+<dd>Create or modify files in your project.
+Use git status to see which files have been modified.</dd>
+    
+<dt><b>5. Committing Changes</b></dt>
+<dd>Add files to the staging area: git add filename or git add . to add all files.
+Commit changes: git commit -m "Descriptive commit message"</dd>
 
-3. Creating a Local Repository <a name="creating-a-local-repository"></a>
-    Create a new directory for your project: mkdir my_project
-    Navigate into the directory: cd my_project
-    Initialize a Git repository: git init
+<dt><b>6. Creating a GitHub Repository</b></dt>
+<dd>Go to GitHub and log in (or sign up).
+Click the "+" icon in the top right corner and select "New repository".
+Fill in the details, optionally add a .gitignore and license.
+Click "Create repository".</dd>
 
-4. Making Changes <a name="making-changes"></a>
-    Create or modify files in your project.
-    Use git status to see which files have been modified.
+<dt><b>7. Pushing to GitHub</b></dt>
+<dd>Copy the repository URL from GitHub.
+Add the remote repository: git remote add origin <repository_url>
+Push your local repository to GitHubr</dd>
+    
+<dt><b>8. Pulling Changes</b></dt>
+<dd>If someone else makes changes:
 
-5. Committing Changes <a name="committing-changes"></a>
-    Add files to the staging area: git add filename or git add . to add all files.
-    Commit changes: git commit -m "Descriptive commit message"
+Fetch changes from the remote repository: git fetch origin
+Merge the changes into your local branch: git merge origin/master</dd>
 
-6. Creating a GitHub Repository <a name="creating-a-github-repository"></a>
-    Go to GitHub and log in (or sign up).
-    Click the "+" icon in the top right corner and select "New repository".
-    Fill in the details, optionally add a .gitignore and license.
-    Click "Create repository".
+<dt><b>9. Branching and Merging</b></dt>
+<dd>Create a new branch: git branch new_branch
+Switch to the new branch: git checkout new_branch
+Make changes, commit, and push as before.
+Merge branches: git checkout master then git merge new_branch</dd>
 
-7. Pushing to GitHub <a name="pushing-to-github"></a>
-    Copy the repository URL from GitHub.
-    Add the remote repository: git remote add origin <repository_url>
-    Push your local repository to GitHub: git push -u origin master
-
-8. Pulling Changes <a name="pulling-changes"></a>
-
-If someone else makes changes:
-    Fetch changes from the remote repository: git fetch origin
-    Merge the changes into your local branch: git merge origin/master
-
-9. Branching and Merging <a name="branching-and-merging"></a>
-    Create a new branch: git branch new_branch
-    Switch to the new branch: git checkout new_branch
-    Make changes, commit, and push as before.
-    Merge branches: git checkout master then git merge new_branch
-
-10. Collaborating with Others <a name="collaborating-with-others"></a>
-    Add collaborators on GitHub in the repository settings.
-    Collaborators clone the repository, make changes, commit, and push.
-
-<h1>Conclusion</h1>
-
-You now have a basic understanding of how to use Git and GitHub for version control. Keep practicing, and explore more advanced features as you become comfortable with the basics. Happy coding!
-
-
-You must include definitions for the following terms in a separate list aside from your directions.
-This will be like a glossary at the end of a text book.
+<dt><b>10. Collaborating with Others</b></dt>
+<dd>Add collaborators on GitHub in the repository settings.
+Collaborators clone the repository, make changes, commit, and push.</dd>
+</dl>
+</body>
+<body>
+<h1>Glossary</h1>
 <ul>
    <li><b>Branch</b></li>
         <dd>A branch in Git is a separate line of development that allows you to work on a specific feature or fix without affecting the main codebase. It enables multiple parallel streams of work.</dd>
